@@ -1,6 +1,7 @@
 from django.db import models
 from rest_framework import serializers
 
+
 class ContactUs(models.Model):
     class Meta:
         db_table = "contacts_us"
