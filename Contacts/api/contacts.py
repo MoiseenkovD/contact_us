@@ -15,10 +15,6 @@ class ContactsApi(APIView):
             "contacts": contacts
         })
 
-        # contact = ContactUs.objects.all()
-        #
-        # return JsonResponse(list(contact.values()), safe=False)
-
     @csrf_exempt
     def post(self, request):
         email_from = request.data.get("email_from")
