@@ -1,6 +1,8 @@
+from Contacts.api import contacts
+
 from django.contrib import admin
 from django.urls import path
-from Contacts.api import contacts
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
